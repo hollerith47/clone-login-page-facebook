@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebedf0;
+}
+
+/* button */
+button{
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-form .form-button .bt-login-submit{
+    background-color: #1877f2;
+    color: white;
+    width: 95%;
+}
+.login-form .form-button .bt-login-create-account{
+    background-color: #42b72a;
+    color: white;
+    width: 70%;
+    margin-bottom: 10px;
+}
+/* mot de passe oubliee */
+.login-form .form-infos p a{
+    text-decoration: none;
+    color: #1877f2;
+}
+.login-form .form-infos p a:hover{
+    text-decoration: underline;
+    }
+/* ligne de separation */
+.login-form .divider{
+    border: 0.1px solid gray;
+    width: 90%;
+    margin: 20px auto;
+
+}
+/* login page */
+.login-title{
+    padding: 0 20px;
+    grid-area: login-title;
+}
+.login-title h1{
+    color: #1877f2;
+    font-size: 4rem;
+    margin: 10px;
+}
+.login-title p{
+    font-size: 1.5rem;
+}
+.login-form{
+    background-color: white;
+    grid-area: login-form;
+    /* border: 1px solid black; utiliser juste pour bien ajuster l'element */
+    margin: 0 auto;
+    width: 340px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0/10%), 0 8px 16px rgb(0 0 0/20%);
+}
+.login-form .form-row{
+    margin: 8px 0;
+}
+
+.login-form .form-row input{
+    height: 50px;
+    font-size: 1.2rem;
+    width: 95% ;
+    border-radius: 5px ;
+    border: 1px solid #ccc;
+    outline: none;
+}
+/* login footer */
+.login-footer{
+    grid-area: login-footer;
+    width: 340px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.login-footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contenair-login{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 360px 1fr;
+    grid-template-areas: 'login-title' 'login-form' 'login-footer';
+    
+}
+.login-footer a span{
+    font-weight: bolder;
+}
+/* .login-form ::placeholder{
+    margin-left: 20px;
+    padding-left: 20px;
+}  confusion je ne comprends*/
+
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+    .contenair-login{
+        padding: 80px 20px;
+        height: 30vh ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: "login-title login-form" "none login-footer";
+    }
+    .login-title{
+        text-align: left;
+    }
+    .login-form .form-row input{
+        height: 50px;
+        font-size: 1.5rem;
+        width: 95% ;
+        border-radius: 8px ;
+        border: 1px solid #ccc;
+    }
+    .login-footer{
+        width: 400px;
+        padding-top: 10px;
+    }
+    .login-form .form-row{
+        margin: 7px 0;
+    }
+    .login-title p{
+        font-size: 1.5rem;
+    }
+    .login-form{
+        width: 400px;
+        /* height: 410px; */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgb(0 0 0/10%), 0 16px 32px rgb(0 0 0/20%);
+    }
+    .login-title{
+        padding: 0 25px;
+    }
+    .login-title h1{
+        font-size: 5rem;
+        margin: 10px;
+    }
+    button{
+        padding: 10px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    .login-footer p a{
+        font-size: 1.6rem;
+    }
+    
+    
+}
+@media screen and (min-width: 1051px) and (max-width: 1449px) {
+    .contenair-login{
+        padding: 80px 20px;
+        height: 44vh ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: "login-title login-form" "none login-footer";
+    }
+    .login-title{
+        text-align: left;
+    }
+    .login-form .form-row input{
+        height: 50px;
+        font-size: 1.5rem;
+        width: 95% ;
+        border-radius: 8px ;
+        border: 1px solid #ccc;
+    }
+    .login-footer{
+        width: 400px;
+        padding-top: 10px;
+    }
+    .login-form .form-row{
+        margin: 7px 0;
+    }
+    .login-title p{
+        font-size: 1.5rem;
+    }
+    .login-form{
+        width: 400px;
+        /* height: 410px; */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgb(0 0 0/10%), 0 16px 32px rgb(0 0 0/20%);
+    }
+    .login-title{
+        padding: 0 25px;
+    }
+    .login-title h1{
+        font-size: 5rem;
+        margin: 10px;
+    }
+    button{
+        padding: 10px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    .login-footer p a{
+        font-size: 1.6rem;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1700px) {
+    .contenair-login{
+        grid-template-columns: 600px 400px;
+        justify-content: center;
+
+    }
+    .login-title{
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1701px) {
+    .contenair-login{
+        padding: 120px 50px;
+        height: 76vh ;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 200px;
+        grid-template-areas: "login-title login-form" "none login-footer";
+
+    }
+    .login-form .form-row input{
+        height: 100px;
+        font-size: 2.5rem;
+        width: 95% ;
+        border-radius: 10px ;
+        border: 2px solid #ccc;
+    }
+    .login-footer{
+        width: 680px;
+        padding-top: 40px;
+    }
+    .login-form .form-row{
+        margin: 16px 0;
+    }
+    .login-title p{
+        font-size: 3rem;
+    }
+    .login-form{
+        width: 680px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgb(0 0 0/10%), 0 16px 32px rgb(0 0 0/20%);
+    }
+    .login-title{
+        padding: 0 40px;
+        text-align: left;
+    }
+    .login-title h1{
+        font-size: 10rem;
+        margin: 20px;
+    }
+    button{
+        padding: 30px;
+        font-size: 3rem;
+        border-radius: 15px;
+    }
+    .login-footer a{
+        font-size: 2.5rem;
+    }
+    
+}
+
+/* configuration responsive sur Ipad */
+@media screen and (min-width: 560px) and (max-width: 899px) {
+    .contenair-login{
+        padding: 50px 50px;
+        height: 80vh ;
+
+    }
+    .login-form .form-row input{
+        height: 50px;
+        font-size: 1.5rem;
+        width: 95% ;
+        border-radius: 8px ;
+        border: 1px solid #ccc;
+    }
+    .login-footer{
+        width: 570px;
+        padding-top: 100px;
+    }
+    .login-form .form-row{
+        margin: 10px 0;
+    }
+    .login-title p{
+        font-size: 1.5rem;
+    }
+    .login-form{
+        width: 550px;
+        height: 410px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgb(0 0 0/10%), 0 16px 32px rgb(0 0 0/20%);
+    }
+    .login-title{
+        padding: 0 25px;
+    }
+    .login-title h1{
+        font-size: 5rem;
+        margin: 10px;
+    }
+    button{
+        padding: 20px;
+        font-size: 2rem;
+        border-radius: 10x;
+    }
+    .login-footer a{
+        font-size: 1.6rem;
+    }
+    
+    
+}

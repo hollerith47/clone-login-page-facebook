@@ -1,0 +1,138 @@
+.contenair-register{
+    display: none;
+    width: 400px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgb(0 0 0/10%), 0 16px 32px rgb(0 0 0/33%);
+    border-radius: 5px;
+    background-color: #ebedf0;
+    z-index: 2;
+}
+.contenair-register .close{
+    position: absolute;
+    right: 5px;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+/* .contenair .contenair-register .close:hover{
+    color: red;
+} */
+.contenair-register .register-title{
+    padding: 0 20px;
+}
+.contenair-register .divider{
+    border: 0.1px solid #ccc;
+}
+.contenair-register .register-title h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.contenair-register .register-title p{
+    color: gray;
+}
+/* formulaire du register */
+.contenair-register .register-form{
+    padding: 10px;
+}
+.contenair-register .register-form input{
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contenair-register .register-form .form-group-input{
+    display: flex;
+    margin-bottom: 5px;
+    gap: 6px;
+}
+.contenair-register .register-form .form-group-input input, 
+.contenair-register .register-form .form-inline-input input{
+    flex: 1;
+    font-size: 0.8rem;
+}
+.contenair-register .register-form .form-inline-input{
+    display: flex;
+    margin-bottom: 5px;
+}
+.contenair-register .form-select-date{
+    display: flex;
+    gap: 6px;
+}
+.contenair-register .form-select-date select{
+    flex: 1;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+/* rendre le contenu  du genre sur la mm ligne */
+.contenair-register .form-radio-items{
+    display: flex;
+    gap: 2px;
+    text-align: center;
+    margin: 5px 0;
+     
+}
+.contenair-register .form-radio-items .form-radio-item{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    height: 35px;
+    font-size: 1rem;
+    
+}
+.contenair-register .form-radio-items .form-radio-item label {
+    bottom: 8px;
+    position: relative;
+}
+
+/* designer du paragraphe de confidentielitee */
+.contenair-register .form-register-infos{
+    font-size: 0.9rem;
+    text-align: justify;
+    color: gray;
+    margin-bottom: 5px;
+}
+.contenair-register .form-register-button{
+    text-align: center;
+    margin-top: 10px;
+}
+.contenair-register .form-register-button .btn-register-submit{
+    background-color: #00a400;
+    width: 200px;
+    height: 36px;
+    line-height: 5px;
+    color: white;
+}
+.contenair-register .form-inline-date p, .form-inline-genre p{
+    color: gray;
+    font-size: 0.8em;
+}
+
+.overlay{
+    background-color: rgba(255, 255, 255, .8);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .contenair-register{
+        width: 350px;
+    }
+    .contenair-register .form-radio-items .form-radio-item label{
+        /* top: 8px; */
+        font-size: 0.8em;
+
+    }
+}
